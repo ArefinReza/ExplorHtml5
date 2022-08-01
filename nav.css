@@ -1,0 +1,36 @@
+h1{
+    color: coral;
+}
+nav >ul{ /*nav er imidiet child k bujhanor jonno > chinno bebohar kora hoy */
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 20px;
+    padding: 0px 20px;
+    font-style: italic;
+}
+nav li:hover{
+    background-color: rgb(11, 11, 11);
+    
+}
+nav >ul >li:hover>ul{
+    display: block;
+
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(225, 134, 15);
+    padding: 0;
+}
+.dropdown li{
+    margin: 0;
+    padding: 0 20px;
+    
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fild{
+            border: 1px solid;
+        }
+        .bat{
+            width: 400px;
+            transition: transform .75s;
+        }
+        .fild:hover .bat{
+            
+            transform: rotate(-60deg) ;
+            transform-origin:top right;
+            transition: transform ease-in .75s;
+         }
+         .ball{
+            height: 40px;
+            width: 40px;
+            background-color: red;
+            border-radius: 30px;
+            position: relative;
+            left: 590px;
+            top: -171px;
+            transition: transform 1s ease-out .76s;
+         }
+        .fild:hover .ball{
+            
+            transform: translate(1000px, -300px) ;
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="fild">
+        <img class="bat" src="https://cdn.shopify.com/s/files/1/0500/5325/1229/products/ERSFalcon3StarCricketBat_1_1400x.png?v=1633546138" alt="">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
