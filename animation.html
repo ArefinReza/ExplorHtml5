@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation</title>
+    <title>animation</title>
     <style>
+        @keyframes sliding{
+            0%{
+                background-color: chartreuse;
+                left: 0;
+                top: 0;
+                
+            }
+            25%{
+                background-color: rgb(224, 239, 16);
+                top: 185px;
+                transform: scale(0.5);
+            }
+            75%{
+                background-color: rgb(224, 239, 16);
+                top: 185px;
+                transform: scale(0.5);
+            }
+            50%{
+                background-color: rgb(15, 61, 199);
+                top: 0px;
+            }
+            100%{
+                background-color: darkgreen;
+                left: 400px;
+                top: 0;;
+
+            }
+        }
         .stage{
             width: 500px;
             height: 300px;
-            background-color: chocolate;
+            background-color: lightcoral;
         }
         .ball{
             width: 100px;
-            width: 100px;
-            background-color: green;
-            /* border: 1px solid green; */
+            height: 100px;
+            background-color: chartreuse;
             border-radius: 50%;
+            position: relative;
+            text-align: center;
+            padding-top: 15px;
+            animation: sliding 3s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
         }
     </style>
 </head>
 <body>
-    <h1>Lets explore Animation</h1>
+    <h1>Lets Explore Animation</h1>
     <div class="stage">
-        <div class="ball"></div>
+        <div class="ball"> Arefin </div>
     </div>
 </body>
 </html>
